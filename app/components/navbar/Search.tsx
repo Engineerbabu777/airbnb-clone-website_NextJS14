@@ -23,7 +23,7 @@ const Search = () => {
     //   return getByValue(locationValue as string)?.label;
     // }
     return 'Anywhere';
-  }, [locationValue, getByValue])
+  }, [locationValue])
 
   const durationLabel = useMemo(() => {
     // if (startDate && endDate) {
@@ -47,7 +47,7 @@ const Search = () => {
 
   return (
     <div
-      onClick={searchModal.onOpen}
+      // onClick={searchModal.onOpen}
       className='
         border-[1px] 
         w-full 
