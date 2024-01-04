@@ -6,6 +6,7 @@ import ToasterProvider from './providers/ToasterProvider'
 import RegisterModal from './components/modals/RegisterModal'
 import LoginModal from './components/modals/LoginModal'
 import getCurrentUser from '@/app/actions/getCurrentUser'
+import RentModal from './components/modals/RentModal'
 const inter = Nunito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default async function RootLayout ({
       <body className={inter.className}>
         <Navbar currentUser={currentUser} />
         <ToasterProvider />
+        <RentModal />
         <RegisterModal />
         <LoginModal />
         {children}
