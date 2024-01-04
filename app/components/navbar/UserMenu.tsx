@@ -35,7 +35,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
       return loginModal.onOpen();
     }
 
-    rentModal.onOpen();
+    // rentModal.onOpen();
   }, [loginModal, currentUser]);
 
   return ( 
@@ -117,7 +117,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
                 />
                 <MenuItem 
                   label="Airbnb your home" 
-                  onClick={rentModal.onOpen}
+                  onClick={() => {}}
                 />
                 <hr />
                 <MenuItem 
