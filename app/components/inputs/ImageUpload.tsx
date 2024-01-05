@@ -9,7 +9,7 @@ declare global {
   var cloudinary: any
 }
 
-const uploadPreset = process.env.TEST;
+const uploadPreset = 'new-data';
 
 interface ImageUploadProps {
   onChange: (value: string) => void;
@@ -35,7 +35,7 @@ const ImageUpload: React.FC<ImageUploadProps> = ({
       {({ open }) => {
         return (
           <div
-            onClick={() => open?.()}
+            onClick={() => open()}
             className="
               relative
               cursor-pointer
